@@ -105,7 +105,7 @@ const HamburgerToggle = styled.input`
   &:checked ~ ${Menu} {
     visibility: visible;
     display: block;
-    transition: 0.25s ease-out;
+    transition: 0.2s ease-out;
     left: 0;
     width: 100vw;
   }

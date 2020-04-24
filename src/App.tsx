@@ -9,6 +9,7 @@ import { CallForSpeakers } from './Components/CallForSpeakers';
 import { Hero } from './Components/Hero';
 import { Navigation } from './Components/Navigation';
 import { themeConfig } from './themeConfig';
+import { Speakers } from './Components/Speakers';
 
 const GlobalStyles = createGlobalStyle`
 html {
@@ -38,6 +39,7 @@ function App() {
         <GlobalStyles />
         <Hero />
         <CallForSpeakers />
+        <Speakers />
       </BaseGrid>
     </ThemeProvider>
   );

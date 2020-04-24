@@ -9,6 +9,7 @@ export const BaseGrid = styled.div<GridProps>`
   display: grid;
   grid-auto-rows: auto;
   align-items: center;
+
   ${up('phone')} {
     margin: 0 3rem;
     grid-template-columns: repeat(12, 1fr);
