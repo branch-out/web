@@ -6,9 +6,9 @@ export const themeConfig: DefaultTheme = {
     desktop: '992px',
   },
   colors: {
-    primary: '#e65343',
-    secondary: '#1143d3',
-    tertiary: '#f5d4de',
+    primary: '#00207f',
+    secondary: '#69b2d2',
+    tertiary: '#f26d1c',
     text: '#ffffff',
   },
 };

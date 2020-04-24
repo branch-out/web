@@ -23,6 +23,10 @@ body {
   font-family: 'JetBrainsMono', monospace;
   font-weight: 100;
 }
+
+* {
+  box-sizing: border-box;
+}
 `;
 
 function App() {

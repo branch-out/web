@@ -5,7 +5,7 @@ import { only } from 'styled-breakpoints';
 import { Title } from '../Title';
 
 const HeroBase = styled(BaseGrid)`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.text};
   grid-column: 1/ -1;
   padding: 2rem 0;
@@ -16,10 +16,6 @@ const HeroBase = styled(BaseGrid)`
 `;
 
 const SubTitle = styled(Title)`
-  ${only('phone')} {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
   grid-row: 1;
 `;
 
@@ -39,7 +35,7 @@ const EventDetails = styled.h3`
   font-weight: normal;
   font-size: 2rem;
   line-height: 2.5rem;
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.primary};
   margin: 0;
 
   ${only('phone')} {
@@ -74,9 +70,10 @@ export const Hero: React.FC = () => (
       <EventDetails>Saturday ... September 2020</EventDetails>
       <EventDetails>High Tech Campus 33, Eindhoven</EventDetails>
       <Description>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus provident laborum et
-        magni laudantium corporis ipsam, quod in autem assumenda omnis ullam non porro earum sunt ea
-        odit dolore nesciunt.
+        Normally, both your asses would be dead as fucking fried chicken, but you happen to pull
+        this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you.
+        But I can't give you this case, it don't belong to me. Besides, I've already been through
+        too much shit this morning over this case to hand it over to your dumb ass.
       </Description>
 
       <KeywordList>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 281">
+  <defs>
+    <path id="arrow-call-for-speakers-a" d="M16.0563492,0.5 L31.6126984,16.0563492 L16.0563492,31.6126984 L13.228,28.784 L24.011,18 L-1.37635684e-15,18 L-1.37635684e-15,14 L23.899,14 L13.228,3.329 L16.0563492,0.5 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="matrix(0 1 1 0 .5 .5)">
+    <line x2="216" y1="1" y2="1" fill="#F26D1C" transform="translate(32 15)"/>
+    <path stroke="#F26D1C" stroke-width="4" d="M32,16 L141.257143,16 C145.675421,16 149.257143,19.581722 149.257143,24 L149.257143,39 C149.257143,43.418278 152.838865,47 157.257143,47 L248,47 L248,47"/>
+    <use fill="#F26D1C" transform="translate(248 31)" xlink:href="#arrow-call-for-speakers-a"/>
+    <g fill="#F26D1C" transform="rotate(-180 16 16)">
+      <rect width="1" height="4" y="14"/>
+      <path d="M16,28 C22.627417,28 28,22.627417 28,16 C28,9.372583 22.627417,4 16,4 C9.372583,4 4,9.372583 4,16 C4,22.627417 9.372583,28 16,28 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z"/>
+    </g>
+  </g>
+</svg>

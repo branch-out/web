@@ -20,7 +20,9 @@ const NavigationBase = styled(BaseGrid)`
 
 const HamburgerMenu = styled.label`
   display: none;
+  user-select: none;
   ${only('phone')} {
+    color: ${({ theme }) => theme.colors.primary};
     margin-right: 1rem;
     display: block;
     grid-column-end: -1;
@@ -42,23 +44,43 @@ const MenuItem = styled.li`
     padding: 0.5rem 1rem;
   }
 
-  a {
+  a,
+  label {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primary};
 
     ${only('phone')} {
+      font-size: 1.5rem;
       color: ${({ theme }) => theme.colors.secondary};
     }
+  }
+
+  label {
+    font-size: 1.25rem;
+  }
+`;
+
+const CloseHamburger = styled(MenuItem)`
+  display: none;
+  text-align: right;
+
+  ${only('phone')} {
+    display: block;
   }
 `;
 
 const Menu = styled.ul`
-  grid-column: -4 / -1;
+  grid-column: 3 / -1;
   text-align: right;
 
   ${only('phone')} {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     text-align: left;
-    background: ${({ theme }) => theme.colors.tertiary};
+    background: ${({ theme }) => theme.colors.primary};
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -81,6 +103,9 @@ export const Navigation: React.FC = () => (
     <HamburgerMenu htmlFor="hamburger">&#9776;</HamburgerMenu>
     <HamburgerToggle type="checkbox" id="hamburger" />
     <Menu>
+      <CloseHamburger>
+        <label htmlFor="hamburger">Close</label>
+      </CloseHamburger>
       <MenuItem>
         <a href="index.html">Call for speakers</a>
       </MenuItem>
