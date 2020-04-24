@@ -86,6 +86,7 @@ const Menu = styled.ul`
 
   ${only('phone')} {
     position: absolute;
+    position: fixed;
     width: 0;
     left: 100vw;
     top: 0;
