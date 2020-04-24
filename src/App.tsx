@@ -22,6 +22,7 @@ html {
 body {
   font-family: 'JetBrainsMono', monospace;
   font-weight: 100;
+  overflow-x: hidden;
 }
 
 * {

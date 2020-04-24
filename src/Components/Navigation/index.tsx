@@ -34,6 +34,9 @@ const HamburgerMenu = styled.label`
 const MenuItem = styled.li`
   display: inline-block;
   margin-right: 1rem;
+  overflow: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   &:last-of-type {
     margin-right: 0;
@@ -50,13 +53,21 @@ const MenuItem = styled.li`
     color: ${({ theme }) => theme.colors.primary};
 
     ${only('phone')} {
+      user-select: none;
       font-size: 1.5rem;
       color: ${({ theme }) => theme.colors.secondary};
     }
   }
 
+  a {
+    ${only('phone')} {
+      display: block;
+    }
+  }
+
   label {
     font-size: 1.25rem;
+    line-height: 60px;
   }
 `;
 
@@ -75,7 +86,8 @@ const Menu = styled.ul`
 
   ${only('phone')} {
     position: absolute;
-    left: 0;
+    width: 0;
+    left: 100vw;
     top: 0;
     right: 0;
     bottom: 0;
@@ -84,15 +96,18 @@ const Menu = styled.ul`
     padding: 0;
     margin: 0;
     list-style-type: none;
-    grid-column: 1 / -1;
-    display: none;
   }
 `;
 
 const HamburgerToggle = styled.input`
   display: none;
+
   &:checked ~ ${Menu} {
+    visibility: visible;
     display: block;
+    transition: 0.25s ease-out;
+    left: 0;
+    width: 100vw;
   }
 `;
 
